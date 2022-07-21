@@ -22,7 +22,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="d-flex align-items-center mb-sm-1">
             <img src="IPD Site/IPD.png" height="70px" alt="">
-            <a class="navbar-brand pl-md-2 text-wrap text-center" href="./idp.html">Institute of Professional Development |
+            <a class="navbar-brand pl-md-2 text-wrap text-center" href="./idp.html">Institute of Professional
+                Development |
                 IPD</a>
         </div>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
@@ -36,7 +37,7 @@
                     <a class="nav-link" href="./idp.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <div class="dropdown"> <a class="nav-link" href="./courses.html">Courses</a>
+                    <div class="dropdown"> <a class="nav-link" href="#">Courses</a>
                         <ul class="dropdown-content">
                             <li><a href="./courses.html">Tech Courses</a> </li>
                             <li><a href="./courses.html">Language Courses</a> </li>
@@ -51,7 +52,13 @@
                     <a class="nav-link" href="./blog.html">Blogs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-info text-white" href="./apply.html">Enroll in a Course</a>
+                    <!-- <a class="nav-link btn btn-info text-white" href="./apply.html">Enroll in a Course</a> -->
+                    <div class="dropdown"> <a class="nav-link text-info" href="#">Enroll Now</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./apply.html">Courses</a> </li>
+                            <li><a href="./career.html">Careers</a> </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
 
@@ -66,117 +73,355 @@
         <div class="row text-center">
             <div class="col-md-6 col-lg-3">
                 <div class="card mb-2">
-                    <img src="IPD Site/cdigital-skills.png" class="card-img-top" alt="...">
+                    <img src="IPD Site/cdigital-skills.png" class="card-img-top hoverone" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Certificate in IT (CIT)</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <a href="#" class="btn btn-info">SEE MORE</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#cit">
+                            SEE MORE
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cit" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Certificate in IT (CIT)</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card border-0">
+                                            <img src="IPD Site/cdigital-skills.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>Course Duration: 6 Months</h4>
+                                                <h4>Fee/Month: Rs. 3000/-</h4>
+                                                <h4>Eligibility: Intermediate</h4>
+                                                <h4>Instructor: Shafqat Ali</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <a href="/apply.html" class="btn btn-info">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        
+
             <div class="col-md-6 col-lg-3">
                 <div class="card mb-2">
-                    <img src="IPD Site/web.jpg" class="card-img-top" alt="...">
+                    <img src="IPD Site/web.jpg" class="card-img-top hoverone" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <a href="#" class="btn btn-info">SEE MORE</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+                            SEE MORE
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Web Development</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card border-0">
+                                            <img src="IPD Site/web.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>Course Duration: 6 Months</h4>
+                                                <h4>Fee/Month: Rs. 3000/-</h4>
+                                                <h4>Eligibility: Intermediate</h4>
+                                                <h4>Instructor: Naeem Hussain</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <a href="/apply.html" class="btn btn-info">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card mb-2">
-                    <img src="IPD Site/python.jpg" class="card-img-top" alt="...">
+                    <img src="IPD Site/python.jpg" class="card-img-top hoverone" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Python</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <a href="#" class="btn btn-info">SEE MORE</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal2">
+                            SEE MORE
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Python</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card border-0">
+                                            <img src="IPD Site/python.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>Course Duration: 6 Months</h4>
+                                                <h4>Fee/Month: Rs. 3000/-</h4>
+                                                <h4>Eligibility: Intermediate</h4>
+                                                <h4>Trainer: Shafqat Ali</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <a href="/apply.html" class="btn btn-info">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card mb-2">
-                    <img src="IPD Site/chinese.jpg" class="card-img-top" alt="...">
+                    <img src="IPD Site/chinese.jpg" class="card-img-top hoverone" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Chinese Language</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <a href="#" class="btn btn-info">SEE MORE</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal3">
+                            SEE MORE
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Chinese Language</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card border-0">
+                                            <img src="IPD Site/chinese.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>Course Duration: 6 Months</h4>
+                                                <h4>Fee/Month: Rs. 3000/-</h4>
+                                                <h4>Trainer: Shafqat Ali</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <a href="/apply.html" class="btn btn-info">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card mb-2">
-                    <img src="IPD Site/short.jpg" class="card-img-top" alt="...">
+                    <img src="IPD Site/short.jpg" class="card-img-top hoverone" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Short Hand</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <a href="#" class="btn btn-info">SEE MORE</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal4">
+                            SEE MORE
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Short Hand</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card border-0">
+                                            <img src="IPD Site/short.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>Course Duration: 6 Months</h4>
+                                                <h4>Fee/Month: Rs. 3000/-</h4>
+                                                <h4>Eligibility: Intermediate</h4>
+                                                <h4>Trainer: Shafqat Ali</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <a href="/apply.html" class="btn btn-info">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card mb-2">
-                    <img src="IPD Site/python.jpg" class="card-img-top" alt="...">
+                    <img src="IPD Site/python.jpg" class="card-img-top hoverone" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Python</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <a href="#" class="btn btn-info">SEE MORE</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal5">
+                            SEE MORE
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Python</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card border-0">
+                                            <img src="IPD Site/python.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>Course Duration: 6 Months</h4>
+                                                <h4>Fee/Month: Rs. 3000/-</h4>
+                                                <h4>Eligibility: Intermediate</h4>
+                                                <h4>Trainer: Shafqat Ali</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <a href="/apply.html" class="btn btn-info">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card mb-2">
-                    <img src="IPD Site/chinese.jpg" class="card-img-top" alt="...">
+                    <img src="IPD Site/chinese.jpg" class="card-img-top hoverone" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Chinese Language</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <a href="#" class="btn btn-info">SEE MORE</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal6">
+                            SEE MORE
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Chinese Language</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card border-0">
+                                            <img src="IPD Site/chinese.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>Course Duration: 6 Months</h4>
+                                                <h4>Fee/Month: Rs. 3000/-</h4>
+                                                <h4>Eligibility: Intermediate</h4>
+                                                <h4>Trainer: Shafqat Ali</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <a href="/apply.html" class="btn btn-info">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="card mb-2">
-                    <img src="IPD Site/short.jpg" class="card-img-top" alt="...">
+                    <img src="IPD Site/short.jpg" class="card-img-top hoverone" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Short Hand</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <a href="#" class="btn btn-info">SEE MORE</a>
+                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal7">
+                            SEE MORE
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">Short Hand</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card border-0">
+                                            <img src="IPD Site/short.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h4>Course Duration: 6 Months</h4>
+                                                <h4>Fee/Month: Rs. 3000/-</h4>
+                                                <h4>Eligibility: Intermediate</h4>
+                                                <h4>Trainer: Shafqat Ali</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <a href="/apply.html" class="btn btn-info">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-        
-        
-            
-        
-        
-            
-        
-        
-            
-        
-        
-            
-        
+
+
+
         </div>
     </div>
+
 
 
     <!-- Footer  -->

@@ -49,3 +49,16 @@
 .fac_cards{
   max-height: 70vh;
 }
+.hoverone{
+  transition: 0.5s;
+}
+
+.hoverone:hover{
+     transform: scale(1.08);
+}
+.hover2{
+  transition: 1s;
+}
+.hover2:hover {
+  transform:rotateY(180deg);
+}

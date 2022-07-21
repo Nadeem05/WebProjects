@@ -63,11 +63,11 @@
     </nav>
     <!-- Enroll Form  -->
     <div class="container">
-        <h2 class="text-center my-5">ONLINE APPLICATION FORM</h2>
+        <h2 class="text-center my-5">CAREERS</h2>
         <div class="row bg-light p-3">
             <div class="col">
                 <form>
-                    <h3 class="my-3 text-info">Basic Information</h3>
+                    <h3 class="my-3 text-info">Personal Information</h3>
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -127,42 +127,11 @@
                             <input type="text" class="form-control" id="phone" placeholder="+92345-3681185" required maxlength="14">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required maxlength="500">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="district">District</label>
-                            <select id="district" class="form-control" required>
-                                <option selected>Choose...</option>
-                                <option>Gilgit</option>
-                                <option>Ghizer</option>
-                                <option>Nagar</option>
-                                <option>Hunza</option>
-                                <option>Diamer</option>
-                                <option>Astore</option>
-                                <option>Ghanche</option>
-                                <option>Skardu</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity" placeholder="Gilgit" required maxlength="30">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputZip">Zip</label>
-                            <input type="number" class="form-control" id="inputZip" placeholder="15100" maxlength="5">
-                        </div>
-                        <div class="form-group ml-2">
-                            <label for="exampleFormControlFile1">Upload your image</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
-                        </div>
-                    </div>
-                    <h3 class="my-3 text-info">Educational Information</h3>
+
+                    <h3 class="my-3 text-info">Educational Infromation</h3>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="degree">Last Degree</label>
+                            <label for="degree">Qualification</label>
                             <input type="text" class="form-control" id="degree" required>
                         </div>
                         <div class="form-group col-md-6">
@@ -170,57 +139,49 @@
                             <input type="text" class="form-control" id="board" required>
                         </div>
                     </div>
+                    
+                    <h3 class="my-3 text-info">Professional Experience</h3>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="oMarks">Obtained Marks</label>
-                            <input type="number" class="form-control" id="oMarks" required>
+                            <label for="degree">Employer Name</label>
+                            <input type="text" class="form-control" id="degree" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="gpa">GPA / Percentage</label>
-                            <input type="text" class="form-control" id="gpa" required>
+                            <label for="board">Organization's Domain</label>
+                            <input type="text" class="form-control" id="board" required>
                         </div>
                     </div>
-                    <h3 class="my-3 text-info">Course Selection</h3>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="district">Preference 1</label>
-                            <select id="district" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>Web Development</option>
-                                <option>Graphic Design</option>
-                                <option>Digital Marketing</option>
-                                <option>IELTS</option>
-                                <option>Shorthand</option>
-                                <option>Chinese Language</option>
-                                <option>Python</option>
-                                <option>WordPress</option>
-                            </select>
+                            <label for="oMarks">Position</label>
+                            <input type="text" class="form-control" id="oMarks" required>
                         </div>
-                        <div class="form-group col-md-6">
-                            <label for="district">Preference 2</label>
-                            <select id="district" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>Web Development</option>
-                                <option>Graphic Design</option>
-                                <option>Digital Marketing</option>
-                                <option>IELTS</option>
-                                <option>Shorthand</option>
-                                <option>Chinese Language</option>
-                                <option>Python</option>
-                                <option>WordPress</option>
-                            </select>
+                        <div class="form-group col-md-3">
+                            <label for="gpa">From</label>
+                            <input type="date" class="form-control" id="gpa" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="gpa">To</label>
+                            <input type="date" class="form-control" id="gpa" required>
                         </div>
                     </div>
+                    
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Message</label>
+                        <label for="exampleFormControlTextarea1">Propsal</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Maximum 1000 characters" required maxlength="1000"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-block btn-info">Submit</button>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Upload your CV</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-info btn-block">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
-    <div class="container text-right my-3">
+    <div class="container text-right my-5">
         <a href="./idp.html" class="btn btn-outline-info">Go back to Home</a>
     </div>
 
